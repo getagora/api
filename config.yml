@@ -1,0 +1,34 @@
+spectaql:
+  logoFile: ./assets/logo.png
+  logoHeightPx: 30
+  faviconFile: ./assets/favicon.png
+  themeDir: ./node_modules/spectaql-dark-theme/theme
+
+introspection: 
+  url: https://api.getagora.com/graphql
+  headers:
+    X-Agora-Token: faketoken
+
+servers:
+  - url: https://api.getagora.com/graphql
+    description: Production
+    production: true
+    headers:
+      - name: X-Agora-Token
+        example: <YOUR_API_TOKEN>
+        comment: Your Agora API token
+
+
+info:
+  title: Agora GraphQL API reference
+  description: Documentation for the Agora GraphQL API
+  x-introItems:
+    - title: This API is extremely alpha
+      description: All the documentation here is subject to change.
+    - title: API Authentication
+      description: |
+        All API requests require an API key to be passed in the `X-Agora-Token` header.
+
+        Anyone who has your API key will be able to create offers and access data from your company. Do not expose the API key in your application code. Do not share it on Github or anywhere else online.
+
+        To get an API key, please visit your [API integration settings](https://app.getagora.com/settings/integrations/api/).

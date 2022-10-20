@@ -1,0 +1,16 @@
+{
+  "name": "api-documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "wuz",
+  "license": "MIT",
+  "dependencies": {
+    "httpster": "^1.2.1",
+    "spectaql": "^1.5.4",
+    "spectaql-dark-theme": "^1.0.1"
+  },
+  "scripts": {
+    "build": "spectaql config.yml",
+    "serve": "httpster -d public"
+  }
+}
