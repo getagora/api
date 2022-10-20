@@ -10,7 +10,7 @@
     "spectaql-dark-theme": "^1.0.1"
   },
   "scripts": {
-    "build": "spectaql config.yml",
-    "serve": "httpster -d public"
+    "build": "spectaql config.yml -t docs",
+    "serve": "httpster -d docs"
   }
 }
